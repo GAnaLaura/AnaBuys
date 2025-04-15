@@ -19,16 +19,6 @@ class OnboardingActivity : AppCompatActivity(), FragmentCommunicator {
     }
 
     override fun showLoader(value: Boolean) {
-
-        if (value) {
-
-            binding.loaderContainerView.visibility = View.VISIBLE
-
-        } else {
-
-            binding.loaderContainerView.visibility = View.GONE
-
-        }
+        binding.loaderContainerView.visibility = if (value) View.VISIBLE else View.GONE
     }
-
 }

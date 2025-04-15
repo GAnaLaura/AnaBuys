@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.anabuys.R
 import com.example.anabuys.databinding.SignUpFragmentBinding
+import com.example.anabuys.utils.FragmentCommunicator
 import com.example.anabuys.viewModel.SignUpViewModel
 
 /**
@@ -22,6 +23,7 @@ class SignUpFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
     private val viewModel by viewModels<SignUpViewModel>()
+    private lateinit var communicator: FragmentCommunicator
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,6 +31,7 @@ class SignUpFragment : Fragment() {
     ): View {
 
         _binding = SignUpFragmentBinding.inflate(inflater, container, false)
+        communicator = requireActivity() as OnboardingActivity
         setupView()
         return binding.root
 
@@ -40,7 +43,15 @@ class SignUpFragment : Fragment() {
             viewModel.requestSignUp(binding.emailTIET.text.toString(),
                 binding.passwordTIET.text.toString())
         }
+        setupObservers()
     }
+
+    private fun setupObservers(){
+        viewModel.loaderState.observe(viewLifecycleOwner) { loaderState ->
+            communicator.showLoader(loaderState)
+        }
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

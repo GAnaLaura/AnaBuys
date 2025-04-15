@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.anabuys.app-mergeDebugResources-56:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "com.example.anabuys.app-mergeDebugResources-57:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alexi\\OneDrive\\Informatica\\Desarrollo Movil\\Proyecto\\AnaBuys\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "D:\\Kalil\\Descargas\\StudioProjects\\AnaBuys\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
