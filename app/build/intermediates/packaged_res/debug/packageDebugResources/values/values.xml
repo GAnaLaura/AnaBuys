@@ -5,6 +5,11 @@
     <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">AnaBuys</string>
     <string name="first_fragment_label">First Fragment</string>
+    <string name="gcm_defaultSenderId" translatable="false">932601537663</string>
+    <string name="google_api_key" translatable="false">AIzaSyCVg-JQJ0OOj-X3ga9XL1UWgVA8WxeDz3E</string>
+    <string name="google_app_id" translatable="false">1:932601537663:android:7b46748b42dec0e4700b4a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCVg-JQJ0OOj-X3ga9XL1UWgVA8WxeDz3E</string>
+    <string name="google_storage_bucket" translatable="false">anabuys-a67b8.firebasestorage.app</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -43,6 +48,7 @@
     </string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="project_id" translatable="false">anabuys-a67b8</string>
     <string name="second_fragment_label">Second Fragment</string>
     <style name="Base.Theme.AnaBuys" parent="Theme.Material3.DayNight.NoActionBar">
         

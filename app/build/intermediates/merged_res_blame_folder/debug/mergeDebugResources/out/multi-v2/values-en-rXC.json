@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.anabuys.app-mergeDebugResources-56:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.example.anabuys.app-mergeDebugResources-57:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alexi\\.gradle\\caches\\8.10.2\\transforms\\aded9553386362af780f234c7eb57667\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\f82c704f7161e973d0b1b21a39feaff9\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\alexi\\.gradle\\caches\\8.10.2\\transforms\\5f864a849442fdb0823988a86cb4b999\\transformed\\appcompat-1.7.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\2059789c68a2b9cf129586b07db5433d\\transformed\\core-1.15.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,251,456,657,858,1065,1270,1482",
+                        "endColumns": "195,204,200,200,206,204,211,203",
+                        "endOffsets": "246,451,652,853,1060,1265,1477,1681"
+                    },
+                    "to": {
+                        "startLines": "31,32,33,34,35,36,37,43",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "5959,6155,6360,6561,6762,6969,7174,8384",
+                        "endColumns": "195,204,200,200,206,204,211,203",
+                        "endOffsets": "6150,6355,6556,6757,6964,7169,7381,8583"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\3a091a4f40b9bd6e9a1c712cfcf7066e\\transformed\\appcompat-1.7.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\alexi\\.gradle\\caches\\8.10.2\\transforms\\96a46ba91d5c683e1640e1a25e9ab09c\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\9e65d8c7b906fb17840ff175e05258b7\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,23 +69,6 @@
                         "startOffsets": "5528,5743",
                         "endColumns": "214,215",
                         "endOffsets": "5738,5954"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\alexi\\.gradle\\caches\\8.10.2\\transforms\\82944ad591a2bd94e75231e77e421237\\transformed\\core-1.15.0\\res\\values-en-rXC\\values-en-rXC.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,251,456,657,858,1065,1270,1482",
-                        "endColumns": "195,204,200,200,206,204,211,203",
-                        "endOffsets": "246,451,652,853,1060,1265,1477,1681"
-                    },
-                    "to": {
-                        "startLines": "31,32,33,34,35,36,37,43",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "5959,6155,6360,6561,6762,6969,7174,8384",
-                        "endColumns": "195,204,200,200,206,204,211,203",
-                        "endOffsets": "6150,6355,6556,6757,6964,7169,7381,8583"
                     }
                 }
             ]

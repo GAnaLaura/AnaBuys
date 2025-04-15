@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.anabuys.app-mergeDebugResources-56:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.example.anabuys.app-mergeDebugResources-57:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alexi\\.gradle\\caches\\8.10.2\\transforms\\f1284d98e534166e0a5fe7872d016c7e\\transformed\\material-1.12.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\6a6bf04beba2b4fc1d57a7431a669e0a\\transformed\\material-1.12.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

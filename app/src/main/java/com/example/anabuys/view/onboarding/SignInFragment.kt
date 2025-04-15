@@ -1,5 +1,6 @@
 package com.example.anabuys.view.onboarding
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.anabuys.R
 import com.example.anabuys.databinding.SignInFragmentBinding
 import com.example.anabuys.utils.FragmentCommunicator
+import com.example.anabuys.view.home.HomeActivity
 import com.example.anabuys.viewModel.SignInViewModel
 
 /**
@@ -37,6 +39,7 @@ class SignInFragment : Fragment() {
         _binding = SignInFragmentBinding.inflate(inflater, container, false)
         communicator = requireActivity() as OnboardingActivity
         setupView()
+        setupObservers()
         return binding.root
 
     }
@@ -67,6 +70,21 @@ class SignInFragment : Fragment() {
                 isValid = false
             } else {
                 isValid = true
+            }
+        }
+    }
+
+    private fun setupObservers(){
+        viewModel.loaderState.observe(viewLifecycleOwner) { loaderState ->
+            communicator.showLoader(loaderState)
+        }
+        viewModel.sessionValid.observe(viewLifecycleOwner) {validSession ->
+            if (validSession) {
+                val intent = Intent(activity, HomeActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
+            } else  {
+                Toast.makeText(activity, "Ingreso invalido", Toast.LENGTH_SHORT).show()
             }
         }
     }

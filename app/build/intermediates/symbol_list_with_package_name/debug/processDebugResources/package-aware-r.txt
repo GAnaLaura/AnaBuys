@@ -3310,7 +3310,6 @@ id always
 id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
-id animationView
 id antiClockwise
 id anticipate
 id arc
@@ -3516,6 +3515,7 @@ id lottie_layer_name
 id ltr
 id m3_side_sheet
 id main
+id mainContainerView
 id marquee
 id masked
 id match_constraint
@@ -3578,7 +3578,7 @@ id multiply
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
-id nav_host_fragment_content_tarea1
+id nav_host_fragment_content_onboarding
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3784,6 +3784,7 @@ id up
 id useLogo
 id vertical
 id vertical_only
+id view
 id view_offset_helper
 id view_transition
 id view_tree_disjoint_parent
@@ -4094,6 +4095,11 @@ string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string first_fragment_label
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -4207,6 +4213,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string previous
+string project_id
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
