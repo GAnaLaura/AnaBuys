@@ -1,0 +1,61 @@
+com.example.anabuys.app-appcompat-resources-1.7.0-0 C:\Users\alexi\.gradle\caches\8.10.2\transforms\04a7f1cdcb3af24e771ba313877c9cfe\transformed\appcompat-resources-1.7.0\res
+com.example.anabuys.app-lifecycle-livedata-core-ktx-2.8.7-1 C:\Users\alexi\.gradle\caches\8.10.2\transforms\09aae925b64a0cdd1d7b7cec1c1643ca\transformed\lifecycle-livedata-core-ktx-2.8.7\res
+com.example.anabuys.app-fragment-1.6.2-2 C:\Users\alexi\.gradle\caches\8.10.2\transforms\0f2ba26f80645c5491cbc01e6087b348\transformed\fragment-1.6.2\res
+com.example.anabuys.app-play-services-basement-18.4.0-3 C:\Users\alexi\.gradle\caches\8.10.2\transforms\12eb635cdebe341080e474223df1e569\transformed\play-services-basement-18.4.0\res
+com.example.anabuys.app-recyclerview-1.1.0-4 C:\Users\alexi\.gradle\caches\8.10.2\transforms\12fa76f7b449bb680b3e6bc9f0276f5b\transformed\recyclerview-1.1.0\res
+com.example.anabuys.app-lifecycle-runtime-release-5 C:\Users\alexi\.gradle\caches\8.10.2\transforms\199b21a86c569d70b0940dc24a2b5071\transformed\lifecycle-runtime-release\res
+com.example.anabuys.app-navigation-common-ktx-2.8.8-6 C:\Users\alexi\.gradle\caches\8.10.2\transforms\19cc927f87c7a16cc07a87f8951234c0\transformed\navigation-common-ktx-2.8.8\res
+com.example.anabuys.app-play-services-base-18.1.0-7 C:\Users\alexi\.gradle\caches\8.10.2\transforms\22376e4895ac118c80339c1c57eb4844\transformed\play-services-base-18.1.0\res
+com.example.anabuys.app-savedstate-1.2.1-8 C:\Users\alexi\.gradle\caches\8.10.2\transforms\27e0a6f787afa9b4b471d7287a62a4de\transformed\savedstate-1.2.1\res
+com.example.anabuys.app-navigation-ui-2.8.8-9 C:\Users\alexi\.gradle\caches\8.10.2\transforms\27f9ee6feede9acf1df1f0fe088aa27b\transformed\navigation-ui-2.8.8\res
+com.example.anabuys.app-core-common-2.0.3-10 C:\Users\alexi\.gradle\caches\8.10.2\transforms\28799a2e87b67144c89812beed8c8220\transformed\core-common-2.0.3\res
+com.example.anabuys.app-cardview-1.0.0-11 C:\Users\alexi\.gradle\caches\8.10.2\transforms\302c2d3cba3d792d7c026b198b4e0775\transformed\cardview-1.0.0\res
+com.example.anabuys.app-savedstate-ktx-1.2.1-12 C:\Users\alexi\.gradle\caches\8.10.2\transforms\3398fbefedc1db5fb5d8de6267d71650\transformed\savedstate-ktx-1.2.1\res
+com.example.anabuys.app-credentials-play-services-auth-1.2.0-rc01-13 C:\Users\alexi\.gradle\caches\8.10.2\transforms\35fc5d7f86e9960b61dfa0c1c39bac4a\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.example.anabuys.app-navigation-runtime-2.8.8-14 C:\Users\alexi\.gradle\caches\8.10.2\transforms\3834df3148a033ee69434c99a6b85e9b\transformed\navigation-runtime-2.8.8\res
+com.example.anabuys.app-fragment-ktx-1.6.2-15 C:\Users\alexi\.gradle\caches\8.10.2\transforms\3a5e2ce82752155f68faec407aabb53e\transformed\fragment-ktx-1.6.2\res
+com.example.anabuys.app-play-services-auth-20.7.0-16 C:\Users\alexi\.gradle\caches\8.10.2\transforms\3ffe7a5cb1efd5f65a19b4fee9f79748\transformed\play-services-auth-20.7.0\res
+com.example.anabuys.app-navigation-ui-ktx-2.8.8-17 C:\Users\alexi\.gradle\caches\8.10.2\transforms\4014a7c47352b3f19440dc4db3aaaeb1\transformed\navigation-ui-ktx-2.8.8\res
+com.example.anabuys.app-coordinatorlayout-1.1.0-18 C:\Users\alexi\.gradle\caches\8.10.2\transforms\44aa65ee1513774e9b1018f796d73c09\transformed\coordinatorlayout-1.1.0\res
+com.example.anabuys.app-lifecycle-livedata-2.8.7-19 C:\Users\alexi\.gradle\caches\8.10.2\transforms\45c1b17220aeab86fbf57ef23d7c7088\transformed\lifecycle-livedata-2.8.7\res
+com.example.anabuys.app-navigation-fragment-ktx-2.8.8-20 C:\Users\alexi\.gradle\caches\8.10.2\transforms\483510028d569708cff31bc166775349\transformed\navigation-fragment-ktx-2.8.8\res
+com.example.anabuys.app-lifecycle-runtime-ktx-release-21 C:\Users\alexi\.gradle\caches\8.10.2\transforms\4b94735e0a3140fb1792627bfb891402\transformed\lifecycle-runtime-ktx-release\res
+com.example.anabuys.app-firebase-common-21.0.0-22 C:\Users\alexi\.gradle\caches\8.10.2\transforms\4e657479662f65320f43f683984249be\transformed\firebase-common-21.0.0\res
+com.example.anabuys.app-navigation-fragment-2.8.8-23 C:\Users\alexi\.gradle\caches\8.10.2\transforms\53aa633f729668bcb3776f2832aa93ac\transformed\navigation-fragment-2.8.8\res
+com.example.anabuys.app-viewpager2-1.0.0-24 C:\Users\alexi\.gradle\caches\8.10.2\transforms\59148a335d51b07ed379a149e9b5a828\transformed\viewpager2-1.0.0\res
+com.example.anabuys.app-appcompat-1.7.0-25 C:\Users\alexi\.gradle\caches\8.10.2\transforms\5f864a849442fdb0823988a86cb4b999\transformed\appcompat-1.7.0\res
+com.example.anabuys.app-transition-1.5.0-26 C:\Users\alexi\.gradle\caches\8.10.2\transforms\68ff3fda6db615cac3cf80a361a782c9\transformed\transition-1.5.0\res
+com.example.anabuys.app-lifecycle-viewmodel-savedstate-2.8.7-27 C:\Users\alexi\.gradle\caches\8.10.2\transforms\69819c795dea1eaf1095af91fcae6edf\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.example.anabuys.app-startup-runtime-1.1.1-28 C:\Users\alexi\.gradle\caches\8.10.2\transforms\79c32ef63aa1942ae233d73025e682d9\transformed\startup-runtime-1.1.1\res
+com.example.anabuys.app-lifecycle-viewmodel-release-29 C:\Users\alexi\.gradle\caches\8.10.2\transforms\7fd03a2e0ae1e4128307929ccb73cdea\transformed\lifecycle-viewmodel-release\res
+com.example.anabuys.app-core-1.15.0-30 C:\Users\alexi\.gradle\caches\8.10.2\transforms\82944ad591a2bd94e75231e77e421237\transformed\core-1.15.0\res
+com.example.anabuys.app-emoji2-1.3.0-31 C:\Users\alexi\.gradle\caches\8.10.2\transforms\83b6274d56d2bb087423542bef3d6b86\transformed\emoji2-1.3.0\res
+com.example.anabuys.app-tracing-1.2.0-32 C:\Users\alexi\.gradle\caches\8.10.2\transforms\8512ef18058124186365b03773e8a806\transformed\tracing-1.2.0\res
+com.example.anabuys.app-constraintlayout-2.2.1-33 C:\Users\alexi\.gradle\caches\8.10.2\transforms\94fc784ef5273c5ee99b37d55e81c516\transformed\constraintlayout-2.2.1\res
+com.example.anabuys.app-credentials-1.2.0-rc01-34 C:\Users\alexi\.gradle\caches\8.10.2\transforms\96a46ba91d5c683e1640e1a25e9ab09c\transformed\credentials-1.2.0-rc01\res
+com.example.anabuys.app-lottie-6.1.0-35 C:\Users\alexi\.gradle\caches\8.10.2\transforms\9a8509dd7f674a27fe24caf4e929366e\transformed\lottie-6.1.0\res
+com.example.anabuys.app-lifecycle-process-2.8.7-36 C:\Users\alexi\.gradle\caches\8.10.2\transforms\9d02af1d90e280b18255c0fb14df1f07\transformed\lifecycle-process-2.8.7\res
+com.example.anabuys.app-navigation-runtime-ktx-2.8.8-37 C:\Users\alexi\.gradle\caches\8.10.2\transforms\9ea90f77b23e2952906905e0d8d47f50\transformed\navigation-runtime-ktx-2.8.8\res
+com.example.anabuys.app-navigation-common-2.8.8-38 C:\Users\alexi\.gradle\caches\8.10.2\transforms\a4e5ec9a2e2f1efffe467a9b2705c062\transformed\navigation-common-2.8.8\res
+com.example.anabuys.app-drawerlayout-1.1.1-39 C:\Users\alexi\.gradle\caches\8.10.2\transforms\aa41f0dd1cd58fdb534d5ca097a36a71\transformed\drawerlayout-1.1.1\res
+com.example.anabuys.app-browser-1.4.0-40 C:\Users\alexi\.gradle\caches\8.10.2\transforms\aded9553386362af780f234c7eb57667\transformed\browser-1.4.0\res
+com.example.anabuys.app-activity-ktx-1.10.1-41 C:\Users\alexi\.gradle\caches\8.10.2\transforms\afc6a357b8efa0a6875777efe9956d42\transformed\activity-ktx-1.10.1\res
+com.example.anabuys.app-profileinstaller-1.4.0-42 C:\Users\alexi\.gradle\caches\8.10.2\transforms\b9a3fe106a951eb149f9facdbfd74385\transformed\profileinstaller-1.4.0\res
+com.example.anabuys.app-core-ktx-1.15.0-43 C:\Users\alexi\.gradle\caches\8.10.2\transforms\c4acda355cbbcc55de168e58b741a23f\transformed\core-ktx-1.15.0\res
+com.example.anabuys.app-core-runtime-2.2.0-44 C:\Users\alexi\.gradle\caches\8.10.2\transforms\c66dcab011b76c8a1b30316e93d43460\transformed\core-runtime-2.2.0\res
+com.example.anabuys.app-lifecycle-viewmodel-ktx-2.8.7-45 C:\Users\alexi\.gradle\caches\8.10.2\transforms\c7676193814316a30ee3d9356be63ee8\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.example.anabuys.app-core-viewtree-1.0.0-46 C:\Users\alexi\.gradle\caches\8.10.2\transforms\cf548baf6dbfbb0182fd1e430222f99c\transformed\core-viewtree-1.0.0\res
+com.example.anabuys.app-window-1.0.0-47 C:\Users\alexi\.gradle\caches\8.10.2\transforms\d324bba567b29231c9547b117fe9d5f6\transformed\window-1.0.0\res
+com.example.anabuys.app-emoji2-views-helper-1.3.0-48 C:\Users\alexi\.gradle\caches\8.10.2\transforms\d9735148d2ece1711b33ad61468252e5\transformed\emoji2-views-helper-1.3.0\res
+com.example.anabuys.app-activity-1.10.1-49 C:\Users\alexi\.gradle\caches\8.10.2\transforms\e137a8adfffbc07da08d068c85a57852\transformed\activity-1.10.1\res
+com.example.anabuys.app-lifecycle-livedata-core-2.8.7-50 C:\Users\alexi\.gradle\caches\8.10.2\transforms\e521e467e7b74e62d453dd7b6b5a58af\transformed\lifecycle-livedata-core-2.8.7\res
+com.example.anabuys.app-annotation-experimental-1.4.1-51 C:\Users\alexi\.gradle\caches\8.10.2\transforms\e7fd3f6748d088d45c3f8ab304ffb99c\transformed\annotation-experimental-1.4.1\res
+com.example.anabuys.app-material-1.12.0-52 C:\Users\alexi\.gradle\caches\8.10.2\transforms\f1284d98e534166e0a5fe7872d016c7e\transformed\material-1.12.0\res
+com.example.anabuys.app-slidingpanelayout-1.2.0-53 C:\Users\alexi\.gradle\caches\8.10.2\transforms\ff5c49e406d252c2e3f5d64f3e483945\transformed\slidingpanelayout-1.2.0\res
+com.example.anabuys.app-pngs-54 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys\app\build\generated\res\pngs\debug
+com.example.anabuys.app-resValues-55 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys\app\build\generated\res\resValues\debug
+com.example.anabuys.app-packageDebugResources-56 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.anabuys.app-packageDebugResources-57 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.anabuys.app-debug-58 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.anabuys.app-debug-59 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys\app\src\debug\res
+com.example.anabuys.app-main-60 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys\app\src\main\res
