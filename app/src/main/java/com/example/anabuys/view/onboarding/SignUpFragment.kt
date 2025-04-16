@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.anabuys.R
@@ -24,6 +26,7 @@ class SignUpFragment : Fragment() {
     private val binding get() = _binding!!
     private val viewModel by viewModels<SignUpViewModel>()
     private lateinit var communicator: FragmentCommunicator
+    var isValid: Boolean = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,17 +36,51 @@ class SignUpFragment : Fragment() {
         _binding = SignUpFragmentBinding.inflate(inflater, container, false)
         communicator = requireActivity() as OnboardingActivity
         setupView()
+        setupObservers()
         return binding.root
 
     }
 
 
     private fun setupView(){
+
         binding.registerButton.setOnClickListener{
+
             viewModel.requestSignUp(binding.emailTIET.text.toString(),
                 binding.passwordTIET.text.toString())
+
         }
-        setupObservers()
+
+        binding.registerButton.setOnClickListener {
+
+            findNavController().navigate(R.id.action_SecondFragment_to_personalInformationFragment)
+        }
+
+        binding.registerButton.setOnClickListener {
+            if (isValid) {
+                requestRegister()
+            } else {
+                Toast.makeText(activity, "Ingreso invalido", Toast.LENGTH_SHORT).show()
+            }
+        }
+        binding.emailTIET.addTextChangedListener {
+            if (binding.emailTIET.text.toString().isEmpty()) {
+                binding.emailTIET.error = "Por favor introduce un correo"
+                isValid = false
+            } else {
+                isValid = true
+            }
+        }
+        binding.passwordTIET.addTextChangedListener {
+            if (binding.passwordTIET.text.toString().isEmpty()) {
+                binding.passwordTIET.error = "Por favor introduce una contraseña"
+                isValid = false
+            } else {
+                isValid = true
+            }
+        }
+
+
     }
 
     private fun setupObservers(){
@@ -58,6 +95,11 @@ class SignUpFragment : Fragment() {
         binding.registerBack.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
+    }
+
+    private fun requestRegister() {
+        viewModel.requestSignUp(binding.emailTIET.text.toString(),
+            binding.passwordTIET.text.toString())
     }
 
     override fun onDestroyView() {

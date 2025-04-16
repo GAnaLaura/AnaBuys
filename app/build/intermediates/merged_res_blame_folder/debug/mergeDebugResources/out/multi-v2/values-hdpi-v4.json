@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.anabuys.app-mergeDebugResources-57:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.example.anabuys.app-mergeDebugResources-59:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\3a091a4f40b9bd6e9a1c712cfcf7066e\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\fe075da4aaf400a9da9fa6f36deae1ed\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
