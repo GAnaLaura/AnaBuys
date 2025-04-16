@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.anabuys.app-mergeDebugResources-57:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "outputFile": "com.example.anabuys.app-mergeDebugResources-59:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\6a6bf04beba2b4fc1d57a7431a669e0a\\transformed\\material-1.12.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\d89f620d972cbbd9be3e4365de6fb760\\transformed\\material-1.12.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

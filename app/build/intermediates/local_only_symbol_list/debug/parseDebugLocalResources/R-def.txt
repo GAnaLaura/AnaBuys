@@ -8,7 +8,12 @@ drawable ic_launcher_foreground
 id FirstFragment
 id SecondFragment
 id action_FirstFragment_to_SecondFragment
+id action_FirstFragment_to_restorePasswordFragment2
 id action_SecondFragment_to_FirstFragment
+id action_SecondFragment_to_personalInformationFragment
+id action_permissionFragment_to_FirstFragment
+id action_personalInformationFragment_to_permissionFragment
+id action_restorePasswordFragment_to_FirstFragment
 id base
 id btnContinuar
 id button2
@@ -24,7 +29,6 @@ id etNombre
 id etNombreUsuario
 id filledButton
 id fragmentContainerView
-id imageButton
 id imageView
 id imageView2
 id layoutButton
@@ -36,10 +40,14 @@ id mainContainerView
 id nav_graph
 id nav_host_fragment_content_onboarding
 id passwordTIET
+id permissionFragment
+id personalInformationFragment
 id registerBack
 id registerButton
 id registerTextView
 id restartTextView
+id restoreBack
+id restorePasswordFragment
 id textField
 id textInputLayoutEmail
 id textInputLayoutPassword
@@ -73,6 +81,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string lorem_ipsum
 string next
 string previous

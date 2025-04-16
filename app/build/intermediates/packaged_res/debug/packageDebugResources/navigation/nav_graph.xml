@@ -9,18 +9,56 @@
         android:id="@+id/FirstFragment"
         android:name="com.example.anabuys.view.onboarding.SignInFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/sign_up_fragment">
+        tools:layout="@layout/sign_in_fragment">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_restorePasswordFragment2"
+            app:destination="@id/restorePasswordFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.anabuys.view.onboarding.SignUpFragment"
-        android:label="@string/second_fragment_label">
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/sign_up_fragment">
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_personalInformationFragment"
+            app:destination="@id/personalInformationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/restorePasswordFragment"
+        android:name="com.example.anabuys.view.onboarding.RestorePasswordFragment"
+        android:label="RestorePasswordFragment"
+        tools:layout="@layout/restore_password_fragment">
+        <action
+            android:id="@+id/action_restorePasswordFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/personalInformationFragment"
+        android:name="com.example.anabuys.view.onboarding.PersonalInformationFragment"
+        android:label="PersonalInformationFragment"
+        tools:layout="@layout/personal_information_fragment">
+        <action
+            android:id="@+id/action_personalInformationFragment_to_permissionFragment"
+            app:destination="@id/permissionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissionFragment"
+        android:name="com.example.anabuys.view.onboarding.PermissionFragment"
+        android:label="PermissionFragment"
+        tools:layout="@layout/permission_fragment">
+        <action
+            android:id="@+id/action_permissionFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
