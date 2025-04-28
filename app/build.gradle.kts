@@ -66,4 +66,9 @@ dependencies {
     // lottie
     implementation("com.airbnb.android:lottie:6.1.0")
 
+    //retrofit
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    implementation(libs.retrofit.converter)
+
 }
