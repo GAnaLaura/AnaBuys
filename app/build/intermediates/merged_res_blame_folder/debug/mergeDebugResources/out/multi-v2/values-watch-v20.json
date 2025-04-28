@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.anabuys.app-mergeDebugResources-57:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.anabuys.app-mergeDebugResources-59:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\3a091a4f40b9bd6e9a1c712cfcf7066e\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\fe075da4aaf400a9da9fa6f36deae1ed\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\396737a543647cf1684f5b624c9ba819\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\8b1eae7a251ca7edb405c70c66864ab8\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
