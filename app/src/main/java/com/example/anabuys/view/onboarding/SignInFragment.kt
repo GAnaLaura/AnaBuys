@@ -45,10 +45,15 @@ class SignInFragment : Fragment() {
     }
 
     private fun setupView() {
-        binding.registerTextView.setOnClickListener {
 
+        binding.restartTextView.setOnClickListener{
+            findNavController().navigate(R.id.action_FirstFragment_to_restorePasswordFragment2)
+        }
+
+        binding.registerTextView.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+
         binding.loginButton.setOnClickListener {
             if (isValid) {
                 requestLogin()
@@ -73,6 +78,7 @@ class SignInFragment : Fragment() {
             }
         }
     }
+
 
     private fun setupObservers(){
         viewModel.loaderState.observe(viewLifecycleOwner) { loaderState ->

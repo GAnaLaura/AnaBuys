@@ -26,10 +26,10 @@ public final class RestorePasswordFragmentBinding implements ViewBinding {
   public final Button filledButton;
 
   @NonNull
-  public final ImageButton imageButton;
+  public final ConstraintLayout main;
 
   @NonNull
-  public final ConstraintLayout main;
+  public final ImageButton restoreBack;
 
   @NonNull
   public final TextInputLayout textField;
@@ -41,13 +41,13 @@ public final class RestorePasswordFragmentBinding implements ViewBinding {
   public final TextView textView4;
 
   private RestorePasswordFragmentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button filledButton, @NonNull ImageButton imageButton,
-      @NonNull ConstraintLayout main, @NonNull TextInputLayout textField,
+      @NonNull Button filledButton, @NonNull ConstraintLayout main,
+      @NonNull ImageButton restoreBack, @NonNull TextInputLayout textField,
       @NonNull TextView textView1, @NonNull TextView textView4) {
     this.rootView = rootView;
     this.filledButton = filledButton;
-    this.imageButton = imageButton;
     this.main = main;
+    this.restoreBack = restoreBack;
     this.textField = textField;
     this.textView1 = textView1;
     this.textView4 = textView4;
@@ -86,13 +86,13 @@ public final class RestorePasswordFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageButton;
-      ImageButton imageButton = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton == null) {
+      ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.restoreBack;
+      ImageButton restoreBack = ViewBindings.findChildViewById(rootView, id);
+      if (restoreBack == null) {
         break missingId;
       }
-
-      ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.textField;
       TextInputLayout textField = ViewBindings.findChildViewById(rootView, id);
@@ -112,8 +112,8 @@ public final class RestorePasswordFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RestorePasswordFragmentBinding((ConstraintLayout) rootView, filledButton,
-          imageButton, main, textField, textView1, textView4);
+      return new RestorePasswordFragmentBinding((ConstraintLayout) rootView, filledButton, main,
+          restoreBack, textField, textView1, textView4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
