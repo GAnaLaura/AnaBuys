@@ -72,7 +72,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e28ae0b-f5e3-40b2-b8f9-dd70aa98da78" name="Changes" comment="Implementación inicial de WeatherAPI">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +122,7 @@
     <setting file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="_Designer_Tab" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -433,7 +433,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746004743000</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementación inicial de WeatherAPI">
+      <option name="closed" value="true" />
+      <created>1746005093710</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746005093710</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -448,12 +456,12 @@
       <map>
         <entry key="com.example.anabuys">
           <value>
-            <CheckInfo lastCheckTimestamp="1745817248870" />
+            <CheckInfo lastCheckTimestamp="1746005368171" />
           </value>
         </entry>
         <entry key="com.example.anabuys.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1745817248867" />
+            <CheckInfo lastCheckTimestamp="1746005368252" />
           </value>
         </entry>
       </map>
