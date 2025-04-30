@@ -6,12 +6,20 @@ import com.example.anabuys.core.WeatherAPI
 import com.example.anabuys.model.Weather
 
 class WeatherRepository {
-    private val  retrofit = RetrofitInstance.getRetrofit().create(WeatherAPI::class.java)
+    private val retrofit = RetrofitInstance.getRetrofit().create(WeatherAPI::class.java)
 
-    suspend fun getProductDetail(): Weather? {
-        val response = retrofit.getProductDetail()
-        Log.i("RESPONSE", response.body().toString())
-
-        return response.body()
+    suspend fun getCurrentWeather(apiKey: String, location: String): Weather? {
+        return try {
+            val response = retrofit.getCurrentWeather(apiKey, location)
+            if (response.isSuccessful) {
+                response.body()
+            } else {
+                Log.e("WeatherRepository", "Error: ${response.errorBody()?.string()}")
+                null
+            }
+        } catch (e: Exception) {
+            Log.e("WeatherRepository", "Exception: ${e.message}")
+            null
+        }
     }
 }
