@@ -15,61 +15,71 @@ import kotlinx.coroutines.withContext
 
 import com.bumptech.glide.Glide
 import android.widget.ImageView
+import androidx.fragment.app.viewModels
+import com.example.anabuys.databinding.FragmentWeatherBinding
+import com.example.anabuys.model.Weather
+import com.example.anabuys.utils.FragmentCommunicator
+import com.example.anabuys.view.home.viewModel.WeatherViewModel
 
 
 class WeatherFragment : Fragment() {
 
-    private val weatherRepository = WeatherRepository()
+    private var _binding: FragmentWeatherBinding? = null
+
+    private val binding get() = _binding!!
+    private val viewModel by viewModels<WeatherViewModel>()
+    private lateinit var communicator: FragmentCommunicator
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_weather, container, false)
+    ): View {
 
-        fetchWeatherData(view)
-
-        return view
+        _binding = FragmentWeatherBinding.inflate(inflater, container, false)
+        communicator = requireActivity() as HomeActivity
+        setupView()
+        return binding.root
     }
 
-    private fun fetchWeatherData(view: View) {
-        val apiKey = "ddc99a020f204b9dbc252459253004"
-        val location = "Karachi" // Cambia por la ubicación deseada
+    fun setupView() {
+        setupObservers()
+        val coordinates = getUserCoordinates()
+        viewModel.getWeatherDetail(coordinates)
+    }
 
-        lifecycleScope.launch {
-            val weather = withContext(Dispatchers.IO) {
-                weatherRepository.getCurrentWeather(apiKey, location)
-            }
+    fun setupObservers() {
 
-            weather?.let {
+        viewModel.weatherInfo.observe(viewLifecycleOwner) { weather ->
+            showWeatherInfo(weather)
+        }
 
-                // Actualizar la UI con los datos obtenidos
-
-                val locationTextView = view.findViewById<TextView>(R.id.locationTextView)
-                val temperatureTextView = view.findViewById<TextView>(R.id.temperatureTextView)
-                val windSpeedTextView = view.findViewById<TextView>(R.id.windSpeedTextView)
-                val sunsetTimeTextView = view.findViewById<TextView>(R.id.sunsetTimeTextView)
-                val dateTimeTextView = view.findViewById<TextView>(R.id.dateTimeTextView)
-
-                val weatherIconImageView = view.findViewById<ImageView>(R.id.weatherIconImageView)
-
-                locationTextView.text = it.location.name
-                temperatureTextView.text = "${it.current.temp_c}°C"
-                windSpeedTextView.text = "${it.current.wind_kph / 3.6} m/s" // Convertir de km/h a m/s
-                sunsetTimeTextView.text = it.current.sunset ?: "N/A"
-                dateTimeTextView.text = it.location.localtime
-
-
-                // Cargar el ícono del clima usando Glide
-
-                Glide.with(this@WeatherFragment)
-                    .load("https:${it.current.condition.icon}")
-                    .into(weatherIconImageView)
-
-            }
-
-
+        viewModel.loaderState.observe(viewLifecycleOwner) { loaderState ->
+            communicator.showLoader(loaderState)
         }
     }
+
+    fun showWeatherInfo(weather: Weather) {
+        binding.locationTextView.text = weather.location.name
+        binding.temperatureTextView.text = weather.current.tempC.toString()
+        binding.windSpeedTextView.text = weather.current.windKph.toString()
+        binding.greetingTextView.text = if (weather.current.isDay == 1) "Good morning" else "Good night"
+        binding.dateTimeTextView.text = weather.location.localTime
+
+
+        Glide.with(this)
+            .load("https:${weather.current.condition.icon}")
+            .error(R.drawable.ic_launcher_foreground) // ← Imagen de fallback
+            .into(binding.weatherIconImageView)
+    }
+
+    fun getUserCoordinates(): String {
+        return "19.32871829633027, -99.16549389549148"
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 }
 

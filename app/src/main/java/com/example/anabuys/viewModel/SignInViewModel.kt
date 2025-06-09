@@ -20,6 +20,8 @@ class SignInViewModel: ViewModel() {
 
     fun requestSignIn(email: String, password: String) {
         _loaderState.value = true
+        _loaderState.value = false
+
         viewModelScope.launch {
             val result = firebase.signInWithEmailAndPassword(email, password).await()
             _loaderState.value = false

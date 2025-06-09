@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.anabuys.app-mergeDebugResources-59:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "com.example.anabuys.app-mergeDebugResources-60:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\fe075da4aaf400a9da9fa6f36deae1ed\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\3864f3f2cb81b38e9586ca04e3e1fab1\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

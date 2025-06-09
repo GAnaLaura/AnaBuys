@@ -8,18 +8,10 @@ import com.example.anabuys.model.Weather
 class WeatherRepository {
     private val retrofit = RetrofitInstance.getRetrofit().create(WeatherAPI::class.java)
 
-    suspend fun getCurrentWeather(apiKey: String, location: String): Weather? {
-        return try {
-            val response = retrofit.getCurrentWeather(apiKey, location)
-            if (response.isSuccessful) {
-                response.body()
-            } else {
-                Log.e("WeatherRepository", "Error: ${response.errorBody()?.string()}")
-                null
-            }
-        } catch (e: Exception) {
-            Log.e("WeatherRepository", "Exception: ${e.message}")
-            null
-        }
+    suspend fun getCurrentWeather(coordinates: String): Weather? {
+        val response = retrofit.getCurrentWeather("8e395019fe6e476887411857252804", coordinates)
+        Log.i("RESPONSE", response.body().toString())
+
+        return response.body()
     }
 }
