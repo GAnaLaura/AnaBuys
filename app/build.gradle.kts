@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.services.plugin)
-    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -74,6 +73,5 @@ dependencies {
 
     // glide
     implementation (libs.glide)
-    kapt(libs.glide.compiler)
 
 }

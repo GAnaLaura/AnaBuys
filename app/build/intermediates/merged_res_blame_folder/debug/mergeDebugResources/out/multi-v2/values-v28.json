@@ -4,7 +4,7 @@
             "outputFile": "com.example.anabuys.app-mergeDebugResources-60:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\3864f3f2cb81b38e9586ca04e3e1fab1\\transformed\\appcompat-1.7.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\alexi\\.gradle\\caches\\8.10.2\\transforms\\27c9cab6b0f5f1b5a5bfbacbb9084dc9\\transformed\\appcompat-1.7.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Kalil\\.gradle\\caches\\8.10.2\\transforms\\b5b1c0f420fd04b1dccbde339293c1ed\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\alexi\\.gradle\\caches\\8.10.2\\transforms\\a5d595e98a5f7ee72b052536053a2f6d\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",

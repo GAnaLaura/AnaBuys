@@ -2,279 +2,213 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
+    <!-- Menu button -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/MenuButton"
         style="?attr/materialIconButtonStyle"
-        android:layout_width="20dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription=""
-        android:insetLeft="-10dp"
-        android:scaleX="2"
-        android:scaleY="2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:contentDescription="@string/open_menu"
         app:icon="@drawable/mas"
         app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- City name -->
     <TextView
         android:id="@+id/locationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:gravity="center_horizontal"
-        android:text="Karachi"
+        android:layout_marginTop="24dp"
+        android:text="@string/location_default"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/MenuButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Date/time -->
+    <TextView
+        android:id="@+id/dateTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/date_time_default"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/locationTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Weather icon -->
+    <ImageView
+        android:id="@+id/weatherIconImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/weatherly"
+        android:contentDescription="@string/weatherIcon"
+        app:layout_constraintTop_toBottomOf="@id/dateTimeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Temperature -->
     <TextView
         android:id="@+id/temperatureTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:gravity="center_horizontal"
-        android:text="22°C"
+        android:layout_marginTop="24dp"
+        android:text="@string/temperature_default"
         android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/weatherIconImageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weatherIconImageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Greeting -->
     <TextView
         android:id="@+id/greetingTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="GOOD MORNING\nWASIM"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="@string/goodMorning"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/temperatureTextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temperatureTextView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Separator line (centered, fixed width) -->
+    <ImageView
+        android:id="@+id/horizontalLine"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toBottomOf="@id/greetingTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Icons row as a horizontal chain -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivSunrise"
+        style="?attr/materialIconButtonStyle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:contentDescription="@string/sunsetIcon"
+        app:icon="@drawable/sunset"
+        app:iconTint="@color/black"
+        app:iconSize="32dp"
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivWind"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivWind"
+        style="?attr/materialIconButtonStyle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:contentDescription="@string/windIcon"
+        app:icon="@drawable/air_24px"
+        app:iconTint="@color/black"
+        app:iconSize="32dp"
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine"
+        app:layout_constraintStart_toEndOf="@id/ivSunrise"
+        app:layout_constraintEnd_toStartOf="@id/ivTemperature" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ivTemperature"
+        style="?attr/materialIconButtonStyle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:contentDescription="@string/temperatureIcon"
+        app:icon="@drawable/temperature"
+        app:iconTint="@color/black"
+        app:iconSize="32dp"
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine"
+        app:layout_constraintStart_toEndOf="@id/ivWind"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Labels under icons -->
+    <TextView
+        android:id="@+id/sunsetLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sunset"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/ivSunrise"
+        app:layout_constraintStart_toStartOf="@id/ivSunrise"
+        app:layout_constraintEnd_toEndOf="@id/ivSunrise" />
 
     <TextView
         android:id="@+id/windLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:gravity="center_horizontal"
-        android:text="WIND"
-        android:textSize="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/sunsetIconButton"
-        tools:layout_editor_absoluteX="193dp" />
+        android:text="@string/wind"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/ivWind"
+        app:layout_constraintStart_toStartOf="@id/ivWind"
+        app:layout_constraintEnd_toEndOf="@id/ivWind" />
 
     <TextView
         android:id="@+id/temperatureLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:gravity="center_horizontal"
-        android:text="TEMPERATURE"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toEndOf="@+id/windLabelTextView"
-        app:layout_constraintTop_toBottomOf="@+id/temperatureIconButton"
-        app:layout_constraintVertical_bias="0.0" />
+        android:text="@string/temperature"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/ivTemperature"
+        app:layout_constraintStart_toStartOf="@id/ivTemperature"
+        app:layout_constraintEnd_toEndOf="@id/ivTemperature" />
 
+    <!-- Values row under labels -->
     <TextView
-        android:id="@+id/sunsetLabelTextView"
+        android:id="@+id/sunsetTimeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:gravity="center_horizontal"
-        android:text="SUNSET"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/windLabelTextView"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/windIconButton"
-        app:layout_constraintVertical_bias="0.0" />
+        android:text="@string/sunset_time_default"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/sunsetLabelTextView"
+        app:layout_constraintStart_toStartOf="@id/sunsetLabelTextView"
+        app:layout_constraintEnd_toEndOf="@id/sunsetLabelTextView" />
 
     <TextView
         android:id="@+id/windSpeedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:gravity="center_horizontal"
-        android:text="4m/s"
+        android:layout_marginTop="8dp"
+        android:text="@string/windInfo"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/windLabelTextView" />
+        app:layout_constraintTop_toBottomOf="@id/windLabelTextView"
+        app:layout_constraintStart_toStartOf="@id/windLabelTextView"
+        app:layout_constraintEnd_toEndOf="@id/windLabelTextView" />
 
     <TextView
         android:id="@+id/temperatureSecondTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:gravity="center_horizontal"
-        android:text="23°C"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/windSpeedTextView"
-        app:layout_constraintTop_toBottomOf="@+id/temperatureLabelTextView" />
-
-    <TextView
-        android:id="@+id/sunsetTimeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:gravity="center_horizontal"
-        android:text="7:00"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/windSpeedTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sunsetLabelTextView" />
-
-        <TextView
-            android:id="@+id/dateTimeTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:gravity="center_horizontal"
-            android:text="MONDAY 7:00 AM"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/locationTextView" />
-
-        <ImageView
-            android:id="@+id/weatherIconImageView"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_marginTop="32dp"
-            android:gravity="center_horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dateTimeTextView"
-            tools:src="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/windIconButton"
-        style="?attr/materialIconButtonStyle"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:contentDescription=""
-        android:gravity="center_horizontal"
-        android:insetLeft="-5dp"
-        android:scaleX="1.4"
-        android:scaleY="1.4"
-        app:icon="@drawable/sunset"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/sunsetIconButton"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
-
-    <Button
-        android:id="@+id/temperatureIconButton"
-        style="?attr/materialIconButtonStyle"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:contentDescription=""
-        android:gravity="center_horizontal"
-        android:insetLeft="-5dp"
-        android:scaleX="1.4"
-        android:scaleY="1.4"
-        app:icon="@drawable/temperature"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toEndOf="@+id/sunsetIconButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
-
-    <Button
-        android:id="@+id/sunsetIconButton"
-        style="?attr/materialIconButtonStyle"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription=""
-        android:gravity="center_horizontal"
-        android:insetLeft="-5dp"
-        android:scaleX="1.4"
-        android:scaleY="1.4"
-        app:icon="@drawable/sunset"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalLine"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/horizontalLine"
-        android:layout_width="24dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:src="@drawable/line"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/greetingTextView"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/verticalLine"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:gravity="center_horizontal"
-        android:scaleY="1.5"
-        android:src="@drawable/vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/windSpeedTextView"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/sunsetTimeTextView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.967" />
-
-    <ImageView
-        android:id="@+id/verticalLine2"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="8dp"
-        android:gravity="center_horizontal"
-        android:scaleY="1.5"
-        android:src="@drawable/vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/temperatureSecondTextView"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/windSpeedTextView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.967" />
-
+        android:layout_marginTop="8dp"
+        android:text="@string/temperature_second_default"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/temperatureLabelTextView"
+        app:layout_constraintStart_toStartOf="@id/temperatureLabelTextView"
+        app:layout_constraintEnd_toEndOf="@id/temperatureLabelTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

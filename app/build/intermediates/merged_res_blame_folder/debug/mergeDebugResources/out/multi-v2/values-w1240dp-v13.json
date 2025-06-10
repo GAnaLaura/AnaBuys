@@ -4,7 +4,7 @@
             "outputFile": "com.example.anabuys.app-mergeDebugResources-60:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Kalil\\Descargas\\StudioProjects\\AnaBuys\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "C:\\Users\\alexi\\OneDrive\\Informatica\\Desarrollo Movil\\Proyecto\\AnaBuys\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
