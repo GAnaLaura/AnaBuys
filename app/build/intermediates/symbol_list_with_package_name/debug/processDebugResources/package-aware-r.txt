@@ -3610,6 +3610,7 @@ id nav_controller_view_tag
 id nav_graph
 id nav_graph2
 id nav_host_fragment_container
+id nav_host_fragment_container_home
 id nav_host_fragment_content_onboarding
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3970,6 +3971,7 @@ layout activity_home
 layout activity_onboarding
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout content_home
 layout content_onboarding
 layout custom_dialog
 layout design_bottom_navigation_item

@@ -1,50 +1,50 @@
 [
     {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\fragment_weather.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\fragment_weather.xml"
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/restore_password_fragment.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/restore_password_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\sign_in_fragment.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\sign_in_fragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\personal_information_fragment.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\personal_information_fragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\sign_up_fragment.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\sign_up_fragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\restore_password_fragment.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\restore_password_fragment.xml"
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/content_onboarding.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/content_onboarding.xml"
     },
     {
         "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/fragment_weather.xml",
         "source": "com.example.anabuys.app-main-64:/layout/fragment_weather.xml"
     },
     {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\activity_home.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\activity_home.xml"
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/permission_fragment.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/permission_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\activity_onboarding.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\activity_onboarding.xml"
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/personal_information_variant_fragment.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/personal_information_variant_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\permission_fragment.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\permission_fragment.xml"
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/personal_information_fragment.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/personal_information_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\personal_information_variant_fragment.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\personal_information_variant_fragment.xml"
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/loader_fragment.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/loader_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\content_onboarding.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\content_onboarding.xml"
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/sign_up_fragment.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/sign_up_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-mergeDebugResources-61:\\layout\\loader_fragment.xml",
-        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\loader_fragment.xml"
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/content_home.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/content_home.xml"
+    },
+    {
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/activity_home.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/sign_in_fragment.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/sign_in_fragment.xml"
+    },
+    {
+        "merged": "com.example.anabuys.app-mergeDebugResources-61:/layout/activity_onboarding.xml",
+        "source": "com.example.anabuys.app-main-64:/layout/activity_onboarding.xml"
     }
 ]
