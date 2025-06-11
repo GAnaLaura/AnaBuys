@@ -4,48 +4,54 @@ package com.example.anabuys.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.anabuys.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityHomeBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
   public final FragmentContainerView fragmentContainerView;
 
   @NonNull
-  public final ConstraintLayout homeContainerView;
+  public final CoordinatorLayout homeContainerView;
 
   @NonNull
-  public final ConstraintLayout loaderContainerView;
+  public final FrameLayout loaderContainerView;
+
+  @NonNull
+  public final BottomNavigationView navView;
 
   @NonNull
   public final LottieAnimationView view;
 
-  private ActivityHomeBinding(@NonNull ConstraintLayout rootView,
+  private ActivityHomeBinding(@NonNull CoordinatorLayout rootView,
       @NonNull FragmentContainerView fragmentContainerView,
-      @NonNull ConstraintLayout homeContainerView, @NonNull ConstraintLayout loaderContainerView,
-      @NonNull LottieAnimationView view) {
+      @NonNull CoordinatorLayout homeContainerView, @NonNull FrameLayout loaderContainerView,
+      @NonNull BottomNavigationView navView, @NonNull LottieAnimationView view) {
     this.rootView = rootView;
     this.fragmentContainerView = fragmentContainerView;
     this.homeContainerView = homeContainerView;
     this.loaderContainerView = loaderContainerView;
+    this.navView = navView;
     this.view = view;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -76,11 +82,17 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout homeContainerView = (ConstraintLayout) rootView;
+      CoordinatorLayout homeContainerView = (CoordinatorLayout) rootView;
 
       id = R.id.loaderContainerView;
-      ConstraintLayout loaderContainerView = ViewBindings.findChildViewById(rootView, id);
+      FrameLayout loaderContainerView = ViewBindings.findChildViewById(rootView, id);
       if (loaderContainerView == null) {
+        break missingId;
+      }
+
+      id = R.id.nav_view;
+      BottomNavigationView navView = ViewBindings.findChildViewById(rootView, id);
+      if (navView == null) {
         break missingId;
       }
 
@@ -90,8 +102,8 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((ConstraintLayout) rootView, fragmentContainerView,
-          homeContainerView, loaderContainerView, view);
+      return new ActivityHomeBinding((CoordinatorLayout) rootView, fragmentContainerView,
+          homeContainerView, loaderContainerView, navView, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

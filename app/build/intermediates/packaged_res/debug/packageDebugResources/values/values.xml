@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
+    <string name="ForecastTittle">Forecast</string>
     <string name="app_name">AnaBuys</string>
     <string name="back_button_description">Botón de retroceso</string>
     <string name="birth_date">Birth date: </string>

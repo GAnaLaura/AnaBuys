@@ -5,6 +5,8 @@ color white
 dimen fab_margin
 drawable air_24px
 drawable baseline_arrow_back_ios_24
+drawable both_ic
+drawable forecast_ic
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable line
@@ -12,6 +14,7 @@ drawable mas
 drawable sunset
 drawable temperature
 drawable vertical
+drawable weather_ic
 drawable weatherly
 id FirstFragment
 id MenuButton
@@ -38,6 +41,7 @@ id etFechaNacimiento
 id etNombre
 id etNombreUsuario
 id filledButton
+id forecastHeaderTextView
 id fragmentContainerView
 id greetingTextView
 id homeContainerView
@@ -58,6 +62,10 @@ id mainContainerView
 id nav_graph
 id nav_graph2
 id nav_host_fragment_content_onboarding
+id nav_view
+id navigation_both
+id navigation_forecast
+id navigaton_weather
 id passwordTIET
 id permissionFragment
 id personalInformationFragment
@@ -87,14 +95,15 @@ id tvBienvenido
 id tvDay
 id tvTemp
 id view
-id weatherFragment
 id weatherIconImageView
+id weather_header
 id weather_root
 id windLabelTextView
 id windSpeedTextView
 layout activity_home
 layout activity_onboarding
 layout content_onboarding
+layout fragment_both
 layout fragment_weather
 layout item_forecast
 layout loader_fragment
@@ -104,11 +113,13 @@ layout personal_information_variant_fragment
 layout restore_password_fragment
 layout sign_in_fragment
 layout sign_up_fragment
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 navigation nav_graph_2
 raw loading
+string ForecastTittle
 string app_name
 string back_button_description
 string birth_date

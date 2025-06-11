@@ -3098,6 +3098,7 @@ drawable air_24px
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_arrow_back_ios_24
+drawable both_ic
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3130,6 +3131,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable forecast_ic
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -3236,6 +3238,7 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable vertical
+drawable weather_ic
 drawable weatherly
 id ALT
 id BOTTOM_END
@@ -3476,6 +3479,7 @@ id fitXY
 id fixed
 id flip
 id floating
+id forecastHeaderTextView
 id forever
 id fragmentContainerView
 id fragment_container_view_tag
@@ -3612,13 +3616,17 @@ id nav_graph
 id nav_graph2
 id nav_host_fragment_container
 id nav_host_fragment_content_onboarding
+id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
+id navigation_both
+id navigation_forecast
 id navigation_header_container
+id navigaton_weather
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3840,8 +3848,8 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id weatherFragment
 id weatherIconImageView
+id weather_header
 id weather_root
 id west
 id wide
@@ -3992,6 +4000,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_both
 layout fragment_weather
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
@@ -4073,6 +4082,7 @@ layout select_dialog_singlechoice_material
 layout sign_in_fragment
 layout sign_up_fragment
 layout support_simple_spinner_dropdown_item
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
@@ -4080,6 +4090,7 @@ navigation nav_graph_2
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 raw loading
+string ForecastTittle
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
