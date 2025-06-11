@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -20,13 +21,16 @@ import java.lang.String;
 
 public final class FragmentWeatherBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
   public final MaterialButton MenuButton;
 
   @NonNull
   public final TextView dateTimeTextView;
+
+  @NonNull
+  public final TextView forecastHeaderTextView;
 
   @NonNull
   public final TextView greetingTextView;
@@ -65,10 +69,13 @@ public final class FragmentWeatherBinding implements ViewBinding {
   public final TextView temperatureTextView;
 
   @NonNull
+  public final ConstraintLayout weatherHeader;
+
+  @NonNull
   public final ImageView weatherIconImageView;
 
   @NonNull
-  public final ConstraintLayout weatherRoot;
+  public final CoordinatorLayout weatherRoot;
 
   @NonNull
   public final TextView windLabelTextView;
@@ -76,19 +83,21 @@ public final class FragmentWeatherBinding implements ViewBinding {
   @NonNull
   public final TextView windSpeedTextView;
 
-  private FragmentWeatherBinding(@NonNull ConstraintLayout rootView,
+  private FragmentWeatherBinding(@NonNull CoordinatorLayout rootView,
       @NonNull MaterialButton MenuButton, @NonNull TextView dateTimeTextView,
-      @NonNull TextView greetingTextView, @NonNull ImageView horizontalLine,
-      @NonNull MaterialButton ivSunrise, @NonNull MaterialButton ivTemperature,
-      @NonNull MaterialButton ivWind, @NonNull TextView locationTextView,
-      @NonNull RecyclerView rvForecast, @NonNull TextView sunsetLabelTextView,
-      @NonNull TextView sunsetTimeTextView, @NonNull TextView temperatureLabelTextView,
-      @NonNull TextView temperatureSecondTextView, @NonNull TextView temperatureTextView,
-      @NonNull ImageView weatherIconImageView, @NonNull ConstraintLayout weatherRoot,
+      @NonNull TextView forecastHeaderTextView, @NonNull TextView greetingTextView,
+      @NonNull ImageView horizontalLine, @NonNull MaterialButton ivSunrise,
+      @NonNull MaterialButton ivTemperature, @NonNull MaterialButton ivWind,
+      @NonNull TextView locationTextView, @NonNull RecyclerView rvForecast,
+      @NonNull TextView sunsetLabelTextView, @NonNull TextView sunsetTimeTextView,
+      @NonNull TextView temperatureLabelTextView, @NonNull TextView temperatureSecondTextView,
+      @NonNull TextView temperatureTextView, @NonNull ConstraintLayout weatherHeader,
+      @NonNull ImageView weatherIconImageView, @NonNull CoordinatorLayout weatherRoot,
       @NonNull TextView windLabelTextView, @NonNull TextView windSpeedTextView) {
     this.rootView = rootView;
     this.MenuButton = MenuButton;
     this.dateTimeTextView = dateTimeTextView;
+    this.forecastHeaderTextView = forecastHeaderTextView;
     this.greetingTextView = greetingTextView;
     this.horizontalLine = horizontalLine;
     this.ivSunrise = ivSunrise;
@@ -101,6 +110,7 @@ public final class FragmentWeatherBinding implements ViewBinding {
     this.temperatureLabelTextView = temperatureLabelTextView;
     this.temperatureSecondTextView = temperatureSecondTextView;
     this.temperatureTextView = temperatureTextView;
+    this.weatherHeader = weatherHeader;
     this.weatherIconImageView = weatherIconImageView;
     this.weatherRoot = weatherRoot;
     this.windLabelTextView = windLabelTextView;
@@ -109,7 +119,7 @@ public final class FragmentWeatherBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -143,6 +153,12 @@ public final class FragmentWeatherBinding implements ViewBinding {
       id = R.id.dateTimeTextView;
       TextView dateTimeTextView = ViewBindings.findChildViewById(rootView, id);
       if (dateTimeTextView == null) {
+        break missingId;
+      }
+
+      id = R.id.forecastHeaderTextView;
+      TextView forecastHeaderTextView = ViewBindings.findChildViewById(rootView, id);
+      if (forecastHeaderTextView == null) {
         break missingId;
       }
 
@@ -218,13 +234,19 @@ public final class FragmentWeatherBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.weather_header;
+      ConstraintLayout weatherHeader = ViewBindings.findChildViewById(rootView, id);
+      if (weatherHeader == null) {
+        break missingId;
+      }
+
       id = R.id.weatherIconImageView;
       ImageView weatherIconImageView = ViewBindings.findChildViewById(rootView, id);
       if (weatherIconImageView == null) {
         break missingId;
       }
 
-      ConstraintLayout weatherRoot = (ConstraintLayout) rootView;
+      CoordinatorLayout weatherRoot = (CoordinatorLayout) rootView;
 
       id = R.id.windLabelTextView;
       TextView windLabelTextView = ViewBindings.findChildViewById(rootView, id);
@@ -238,11 +260,11 @@ public final class FragmentWeatherBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentWeatherBinding((ConstraintLayout) rootView, MenuButton, dateTimeTextView,
-          greetingTextView, horizontalLine, ivSunrise, ivTemperature, ivWind, locationTextView,
-          rvForecast, sunsetLabelTextView, sunsetTimeTextView, temperatureLabelTextView,
-          temperatureSecondTextView, temperatureTextView, weatherIconImageView, weatherRoot,
-          windLabelTextView, windSpeedTextView);
+      return new FragmentWeatherBinding((CoordinatorLayout) rootView, MenuButton, dateTimeTextView,
+          forecastHeaderTextView, greetingTextView, horizontalLine, ivSunrise, ivTemperature,
+          ivWind, locationTextView, rvForecast, sunsetLabelTextView, sunsetTimeTextView,
+          temperatureLabelTextView, temperatureSecondTextView, temperatureTextView, weatherHeader,
+          weatherIconImageView, weatherRoot, windLabelTextView, windSpeedTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

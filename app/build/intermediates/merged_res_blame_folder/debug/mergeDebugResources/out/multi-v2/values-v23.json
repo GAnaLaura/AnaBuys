@@ -53,14 +53,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\alexi\\OneDrive\\Informatica\\Desarrollo Movil\\Proyecto\\AnaBuys-alexCordero\\app\\src\\main\\res\\values-v23\\themes.xml",
+                    "source": "C:\\Users\\alexi\\OneDrive\\Informatica\\Desarrollo Movil\\Weatherly\\app\\src\\main\\res\\values-v23\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "64",
+                        "startOffsets": "66",
                         "endLines": "7",
                         "endColumns": "12",
-                        "endOffsets": "428"
+                        "endOffsets": "435"
                     },
                     "to": {
                         "startLines": "53",

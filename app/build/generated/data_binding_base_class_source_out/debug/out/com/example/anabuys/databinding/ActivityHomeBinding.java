@@ -4,9 +4,10 @@ package com.example.anabuys.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -18,23 +19,23 @@ import java.lang.String;
 
 public final class ActivityHomeBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
   public final FragmentContainerView fragmentContainerView;
 
   @NonNull
-  public final ConstraintLayout homeContainerView;
+  public final CoordinatorLayout homeContainerView;
 
   @NonNull
-  public final ConstraintLayout loaderContainerView;
+  public final FrameLayout loaderContainerView;
 
   @NonNull
   public final LottieAnimationView view;
 
-  private ActivityHomeBinding(@NonNull ConstraintLayout rootView,
+  private ActivityHomeBinding(@NonNull CoordinatorLayout rootView,
       @NonNull FragmentContainerView fragmentContainerView,
-      @NonNull ConstraintLayout homeContainerView, @NonNull ConstraintLayout loaderContainerView,
+      @NonNull CoordinatorLayout homeContainerView, @NonNull FrameLayout loaderContainerView,
       @NonNull LottieAnimationView view) {
     this.rootView = rootView;
     this.fragmentContainerView = fragmentContainerView;
@@ -45,7 +46,7 @@ public final class ActivityHomeBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -76,10 +77,10 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout homeContainerView = (ConstraintLayout) rootView;
+      CoordinatorLayout homeContainerView = (CoordinatorLayout) rootView;
 
       id = R.id.loaderContainerView;
-      ConstraintLayout loaderContainerView = ViewBindings.findChildViewById(rootView, id);
+      FrameLayout loaderContainerView = ViewBindings.findChildViewById(rootView, id);
       if (loaderContainerView == null) {
         break missingId;
       }
@@ -90,7 +91,7 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeBinding((ConstraintLayout) rootView, fragmentContainerView,
+      return new ActivityHomeBinding((CoordinatorLayout) rootView, fragmentContainerView,
           homeContainerView, loaderContainerView, view);
     }
     String missingId = rootView.getResources().getResourceName(id);

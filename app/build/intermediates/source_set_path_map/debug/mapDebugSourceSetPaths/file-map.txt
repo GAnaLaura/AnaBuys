@@ -55,11 +55,11 @@ com.example.anabuys.app-core-1.15.0-53 C:\Users\alexi\.gradle\caches\8.10.2\tran
 com.example.anabuys.app-navigation-runtime-2.8.8-54 C:\Users\alexi\.gradle\caches\8.10.2\transforms\f4589d5cfbe02321450a019b3a94e98e\transformed\navigation-runtime-2.8.8\res
 com.example.anabuys.app-savedstate-1.2.1-55 C:\Users\alexi\.gradle\caches\8.10.2\transforms\f7ea2cd9aa25ad86d0f4c60b4a0bff2d\transformed\savedstate-1.2.1\res
 com.example.anabuys.app-lifecycle-livedata-core-ktx-2.8.7-56 C:\Users\alexi\.gradle\caches\8.10.2\transforms\fa9e4e4a05628762cc9d13ebee17e941\transformed\lifecycle-livedata-core-ktx-2.8.7\res
-com.example.anabuys.app-pngs-57 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys-alexCordero\app\build\generated\res\pngs\debug
-com.example.anabuys.app-res-58 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys-alexCordero\app\build\generated\res\processDebugGoogleServices
-com.example.anabuys.app-resValues-59 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys-alexCordero\app\build\generated\res\resValues\debug
-com.example.anabuys.app-packageDebugResources-60 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys-alexCordero\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.anabuys.app-packageDebugResources-61 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys-alexCordero\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.anabuys.app-debug-62 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys-alexCordero\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.anabuys.app-debug-63 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys-alexCordero\app\src\debug\res
-com.example.anabuys.app-main-64 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Proyecto\AnaBuys-alexCordero\app\src\main\res
+com.example.anabuys.app-pngs-57 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Weatherly\app\build\generated\res\pngs\debug
+com.example.anabuys.app-res-58 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Weatherly\app\build\generated\res\processDebugGoogleServices
+com.example.anabuys.app-resValues-59 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Weatherly\app\build\generated\res\resValues\debug
+com.example.anabuys.app-packageDebugResources-60 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Weatherly\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.anabuys.app-packageDebugResources-61 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Weatherly\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.anabuys.app-debug-62 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Weatherly\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.anabuys.app-debug-63 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Weatherly\app\src\debug\res
+com.example.anabuys.app-main-64 C:\Users\alexi\OneDrive\Informatica\Desarrollo Movil\Weatherly\app\src\main\res

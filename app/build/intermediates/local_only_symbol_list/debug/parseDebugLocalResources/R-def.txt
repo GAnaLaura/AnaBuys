@@ -38,6 +38,7 @@ id etFechaNacimiento
 id etNombre
 id etNombreUsuario
 id filledButton
+id forecastHeaderTextView
 id fragmentContainerView
 id greetingTextView
 id homeContainerView
@@ -89,6 +90,7 @@ id tvTemp
 id view
 id weatherFragment
 id weatherIconImageView
+id weather_header
 id weather_root
 id windLabelTextView
 id windSpeedTextView
@@ -109,6 +111,7 @@ mipmap ic_launcher_round
 navigation nav_graph
 navigation nav_graph_2
 raw loading
+string ForecastTittle
 string app_name
 string back_button_description
 string birth_date
