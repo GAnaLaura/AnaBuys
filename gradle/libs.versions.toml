@@ -23,6 +23,7 @@ retrofitVersion = "2.9.0"
 gson = "2.10.1"
 location = "21.0.1"
 coroutines = "1.6.4"
+scenecore = "1.0.0-alpha04"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -49,6 +50,7 @@ retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson"
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson"}
 location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "location" }
 coroutines-play = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "coroutines" }
+androidx-scenecore = { group = "androidx.xr.scenecore", name = "scenecore", version.ref = "scenecore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
