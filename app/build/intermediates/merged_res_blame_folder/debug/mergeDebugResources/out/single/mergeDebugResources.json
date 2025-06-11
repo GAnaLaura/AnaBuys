@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_baseline_arrow_back_ios_24.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\baseline_arrow_back_ios_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_weatherly.png.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\weatherly.png"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_personal_information_fragment.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\personal_information_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_temperature.png.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\temperature.png"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\raw_loading.json.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\raw\\loading.json"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_sunset.png.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\sunset.png"
+    },
+    {
+        "merged": "com.example.anabuys.app-debug-62:/layout_fragment_weather.xml.flat",
+        "source": "com.example.anabuys.app-main-64:/layout/fragment_weather.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_air_24px.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\air_24px.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_line.png.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\line.png"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_permission_fragment.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\permission_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_activity_onboarding.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_restore_password_fragment.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\restore_password_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_sign_up_fragment.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\sign_up_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_mas.png.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\mas.png"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_personal_information_variant_fragment.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\personal_information_variant_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_vertical.png.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\vertical.png"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_fragment_weather.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\fragment_weather.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_loader_fragment.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\loader_fragment.xml"
+    },
+    {
+        "merged": "com.example.anabuys.app-debug-62:/layout_item_forecast.xml.flat",
+        "source": "com.example.anabuys.app-main-64:/layout/item_forecast.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\navigation_nav_graph_2.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\navigation\\nav_graph_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_sign_in_fragment.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\sign_in_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_content_onboarding.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\content_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-debug-62:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\alexi\\.gradle\\daemon\\8.10.2\\com.example.anabuys.app-main-64:\\layout\\activity_home.xml"
+    }
+]
