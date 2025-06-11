@@ -71,4 +71,12 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.retrofit.converter)
 
+    // glide
+    implementation (libs.glide)
+
+    //Location
+    implementation(libs.location)
+    implementation(libs.coroutines.play)
+
+
 }

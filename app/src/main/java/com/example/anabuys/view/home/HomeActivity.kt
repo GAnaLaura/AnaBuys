@@ -1,14 +1,13 @@
 package com.example.anabuys.view.home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.anabuys.R
 import com.example.anabuys.databinding.ActivityHomeBinding
 import com.example.anabuys.utils.FragmentCommunicator
+import com.example.anabuys.view.home.WeatherFragment
 
 class HomeActivity : AppCompatActivity(), FragmentCommunicator {
 
@@ -16,12 +15,25 @@ class HomeActivity : AppCompatActivity(), FragmentCommunicator {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        try {
+            binding = ActivityHomeBinding.inflate(layoutInflater)
+            setContentView(binding.root)
+            Log.d("HomeActivity", "Entrando a HomeActivity")
+            Log.d("HomeActivity", "Seteado binding con éxito")
 
-        binding = ActivityHomeBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+            // Mostrar el WeatherFragment solo la primera vez
+            if (savedInstanceState == null) {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView, WeatherFragment())
+                    .commit()
+            }
+        } catch (e: Exception) {
+            Log.e("HomeActivity", "Error al crear la actividad", e)
+        }
     }
 
     override fun showLoader(value: Boolean) {
-        binding.main.visibility = if (value) View.VISIBLE else View.GONE
+
+        binding.loaderContainerView.visibility = if (value) View.VISIBLE else View.GONE
     }
 }

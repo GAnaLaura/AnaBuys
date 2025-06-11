@@ -9,11 +9,11 @@ object RetrofitInstance {
 
     fun getRetrofit(): Retrofit {
         val httpClient = OkHttpClient.Builder()
-            .connectTimeout(30, TimeUnit.SECONDS)
+            .connectTimeout(50, TimeUnit.SECONDS)
             .readTimeout(60, TimeUnit.SECONDS)
             .build()
         return Retrofit.Builder()
-            .baseUrl("http://api.weatherapi.com/v1")
+            .baseUrl("https://api.weatherapi.com/v1/")
             .client(httpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
