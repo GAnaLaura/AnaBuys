@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigaton_weather"
+        android:icon="@drawable/weather_ic"
+        android:title="Weather" />
+
+    <item
+        android:id="@+id/navigation_both"
+        android:icon="@drawable/both_ic"
+        android:title="Both" />
+
+    <item
+        android:id="@+id/navigation_forecast"
+        android:icon="@drawable/forecast_ic"
+        android:title="Forecast" />
+
+</menu>
