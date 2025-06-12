@@ -9,11 +9,7 @@
         android:name="com.example.anabuys.view.home.WeatherFragment"
         android:label="WeatherFragment"
         tools:layout="@layout/fragment_weather"/>
-    <fragment
-        android:id="@+id/navigation_both"
-        android:name="com.example.anabuys.view.home.BothFragment"
-        android:label="fragment_both"
-        tools:layout="@layout/fragment_both" />
+
 
 
 </navigation>
