@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.anabuys.R
 import com.example.anabuys.databinding.ActivityHomeBinding
 import com.example.anabuys.utils.FragmentCommunicator
 import com.example.anabuys.view.home.WeatherFragment
