@@ -9,14 +9,6 @@
     android:fitsSystemWindows="true"
     tools:context=".view.home.HomeActivity">
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:menu="@menu/bottom_nav_menu" />
-
     <!-- Host for WeatherFragment (and other destinations) -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
@@ -28,25 +20,23 @@
         app:defaultNavHost="true"
         tools:layout="@layout/fragment_weather"/>
 
+    <!-- Loader overlay -->
+    <FrameLayout
+        android:id="@+id/loaderContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
 
-        <!-- Loader overlay -->
-        <FrameLayout
-            android:id="@+id/loaderContainerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:visibility="gone">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/view"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading" />
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/view"
-                android:layout_width="128dp"
-                android:layout_height="128dp"
-                android:layout_gravity="center"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/loading" />
-
-        </FrameLayout>
-
+    </FrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

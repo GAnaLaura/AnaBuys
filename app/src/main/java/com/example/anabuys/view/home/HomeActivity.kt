@@ -4,14 +4,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavHost
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.setupWithNavController
-import com.example.anabuys.R
 import com.example.anabuys.databinding.ActivityHomeBinding
 import com.example.anabuys.utils.FragmentCommunicator
 import com.example.anabuys.view.home.WeatherFragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -35,16 +30,9 @@ class HomeActivity : AppCompatActivity(), FragmentCommunicator {
         } catch (e: Exception) {
             Log.e("HomeActivity", "Error al crear la actividad", e)
         }
-
-        val navView : BottomNavigationView = binding.navView
-        val navHost = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
-        val navController = navHost.navController
-        navView.setupWithNavController(navController)
-        setContentView(binding.root)
     }
 
     override fun showLoader(value: Boolean) {
-
         binding.loaderContainerView.visibility = if (value) View.VISIBLE else View.GONE
     }
 }

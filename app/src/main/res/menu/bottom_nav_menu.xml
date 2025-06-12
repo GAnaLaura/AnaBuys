@@ -3,16 +3,15 @@
     <item
         android:id="@+id/navigaton_weather"
         android:icon="@drawable/weather_ic"
-        android:title="Weather" />
+        android:title="weather" />
 
     <item
         android:id="@+id/navigation_both"
         android:icon="@drawable/both_ic"
-        android:title="Both" />
+        android:title="both" />
 
     <item
         android:id="@+id/navigation_forecast"
         android:icon="@drawable/forecast_ic"
-        android:title="Forecast" />
-
+        android:title="forecast" />
 </menu>

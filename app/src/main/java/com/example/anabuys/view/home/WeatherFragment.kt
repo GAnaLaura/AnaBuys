@@ -23,6 +23,7 @@ import com.example.anabuys.utils.FragmentCommunicator
 import com.example.anabuys.view.home.viewModel.ForecastViewModel
 import com.example.anabuys.view.home.viewModel.WeatherViewModel
 import com.example.anabuys.view.home.ForecastAdapter
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -61,6 +62,7 @@ class WeatherFragment : Fragment() {
         _binding = FragmentWeatherBinding.inflate(inflater, container, false)
         communicator = requireActivity() as FragmentCommunicator
         setupView()
+        setupBottomNavigation()
         return binding.root
     }
 
@@ -76,6 +78,31 @@ class WeatherFragment : Fragment() {
                 Manifest.permission.ACCESS_COARSE_LOCATION
             )
         )
+    }
+
+    private fun setupBottomNavigation() {
+        val navView = binding.root.findViewById<BottomNavigationView>(R.id.navView)
+        navView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigaton_weather -> {
+                    // Scroll al inicio del scrollView
+                    binding.scrollView.smoothScrollTo(0, 0)
+                    true
+                }
+                R.id.navigation_both -> {
+                    // Scroll hasta antes del RecyclerView (al final del header)
+                    binding.scrollView.smoothScrollTo(0, binding.temperatureTextView.top)
+                    true
+                }
+                R.id.navigation_forecast -> {
+                    // Scroll hasta antes del temperatureTextView
+                    binding.scrollView.smoothScrollTo(0, binding.rvForecast.top)
+                    true
+                }
+                else -> false
+            }
+        }
+        navView.selectedItemId = R.id.navigaton_weather
     }
 
     private fun getUserLocation(onLocationReady: (String) -> Unit) {
