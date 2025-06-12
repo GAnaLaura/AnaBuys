@@ -91,12 +91,12 @@ class WeatherFragment : Fragment() {
                 }
                 R.id.navigation_both -> {
                     // Scroll hasta antes del RecyclerView (al final del header)
-                    binding.scrollView.smoothScrollTo(0, binding.rvForecast.top)
+                    binding.scrollView.smoothScrollTo(0, binding.temperatureTextView.top)
                     true
                 }
                 R.id.navigation_forecast -> {
                     // Scroll hasta antes del temperatureTextView
-                    binding.scrollView.smoothScrollTo(0, binding.temperatureTextView.top)
+                    binding.scrollView.smoothScrollTo(0, binding.rvForecast.top)
                     true
                 }
                 else -> false
