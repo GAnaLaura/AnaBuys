@@ -1,0 +1,58 @@
+LISTA DE ARCHIVOS A MODIFICAR PARA MANEJO DE ERRORES DEL SERVIDOR
+
+1. APIs y lógica de red
+   - app/src/main/java/com/example/anabuys/core/ForecastAPI.kt
+   - app/src/main/java/com/example/anabuys/core/WeatherAPI.kt
+   - app/src/main/java/com/example/anabuys/core/RetrofitInstance.kt
+
+2. Repositorios
+   - app/src/main/java/com/example/anabuys/network/ForecastRepository.kt
+   - app/src/main/java/com/example/anabuys/network/WeatherRepository.kt
+
+3. Firebase y autenticación
+   - app/src/main/java/com/example/anabuys/core/FirebaseModule.kt
+
+4. Proveedores de ubicación
+   - app/src/main/java/com/example/anabuys/core/LocationProvider.kt
+
+5. ViewModels (manejo de estados y errores)
+   - app/src/main/java/com/example/anabuys/viewModel/SignInViewModel.kt
+   - app/src/main/java/com/example/anabuys/viewModel/SignUpViewModel.kt
+   - app/src/main/java/com/example/anabuys/view/home/viewModel/ForecastViewModel.kt
+
+6. Parsing de modelos
+   - app/src/main/java/com/example/anabuys/model/Forecast.kt
+   - app/src/main/java/com/example/anabuys/model/Weather.kt
+
+7. UI (mostrar errores al usuario)
+   - app/src/main/java/com/example/anabuys/view/home/HomeActivity.kt
+   - app/src/main/java/com/example/anabuys/view/home/WeatherFragment.kt
+   - app/src/main/java/com/example/anabuys/view/home/ForecastFragment.kt
+   - app/src/main/java/com/example/anabuys/view/onboarding/OnboardingActivity.kt
+   - app/src/main/java/com/example/anabuys/view/onboarding/SignInFragment.kt
+   - app/src/main/java/com/example/anabuys/view/onboarding/SignUpFragment.kt
+   - app/src/main/java/com/example/anabuys/view/onboarding/PersonalInformationFragment.kt
+
+8. Layouts XML relacionados
+   - app/src/main/res/layout/activity_home.xml
+   - app/src/main/res/layout/activity_onboarding.xml
+   - app/src/main/res/layout/fragment_weather.xml
+   - app/src/main/res/layout/fragment_forecast.xml
+   - app/src/main/res/layout/sign_in_fragment.xml
+   - app/src/main/res/layout/sign_up_fragment.xml
+   - app/src/main/res/layout/personal_information_fragment.xml
+
+------------------------------------------------------------
+INSTRUCCIONES E INFORMACIÓN IMPORTANTE
+
+- Implementa manejo de errores en cada punto donde haya acceso a red, Firebase, parsing de datos o lógica de negocio.
+- Usa bloques try-catch y verifica respuestas de error en las llamadas a APIs y Firebase.
+- En los ViewModels, propaga los errores a la UI usando LiveData, StateFlow o similar.
+- En la UI, muestra mensajes claros al usuario (Snackbar, Toast, AlertDialog, vistas de error, etc.).
+- No expongas información sensible en los mensajes de error.
+- Agrega botones de "Reintentar" donde sea necesario.
+- Modifica los layouts XML para incluir vistas de error o loaders si es necesario.
+- Escribe pruebas para verificar el manejo de errores.
+- Documenta los cambios realizados para facilitar el mantenimiento.
+
+------------------------------------------------------------

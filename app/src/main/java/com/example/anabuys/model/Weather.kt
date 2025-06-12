@@ -2,13 +2,16 @@ package com.example.anabuys.model
 
 import com.google.gson.annotations.SerializedName
 
+/**
+ * Modelo para mapear la respuesta de la API del clima actual.
+ * El manejo de errores de parsing debe hacerse en el repositorio o ViewModel.
+ */
 data class Weather(
     val location: Location,
     val current: Current
 ) {
 
     data class Location(
-
         val name: String,
         val region: String,
         val country: String,
@@ -32,5 +35,4 @@ data class Weather(
         val icon: String,
         val code: Int
     )
-
 }

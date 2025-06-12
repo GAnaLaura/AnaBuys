@@ -12,9 +12,17 @@ import kotlinx.coroutines.tasks.await
 import android.Manifest
 import android.annotation.SuppressLint
 
+sealed class LocationResult {
+    data class Success(val location: Location) : LocationResult()
+    data class Error(val message: String) : LocationResult()
+    object PermissionDenied : LocationResult()
+    object LocationUnavailable : LocationResult()
+}
+
 class LocationProvider private constructor(context: Context) {
 
-    private val fusedLocationClient: FusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(context.applicationContext)
+    private val fusedLocationClient: FusedLocationProviderClient =
+        LocationServices.getFusedLocationProviderClient(context.applicationContext)
 
     companion object {
         @Volatile
@@ -28,16 +36,33 @@ class LocationProvider private constructor(context: Context) {
     }
 
     @SuppressLint("MissingPermission")
-    suspend fun getCurrentLocation(): Location? {
+    suspend fun getCurrentLocation(context: Context): LocationResult {
+        // Verificar permisos antes de intentar obtener la ubicación
+        val hasPermission = ContextCompat.checkSelfPermission(
+            context,
+            Manifest.permission.ACCESS_FINE_LOCATION
+        ) == PackageManager.PERMISSION_GRANTED
+
+        if (!hasPermission) {
+            return LocationResult.PermissionDenied
+        }
+
         return try {
             val cancellationTokenSource = CancellationTokenSource()
-            fusedLocationClient.getCurrentLocation(
+            val location = fusedLocationClient.getCurrentLocation(
                 Priority.PRIORITY_HIGH_ACCURACY,
                 cancellationTokenSource.token
             ).await()
+            if (location != null) {
+                LocationResult.Success(location)
+            } else {
+                LocationResult.LocationUnavailable
+            }
+        } catch (e: SecurityException) {
+            LocationResult.PermissionDenied
         } catch (e: Exception) {
             e.printStackTrace()
-            null
+            LocationResult.Error("No se pudo obtener la ubicación: ${e.localizedMessage ?: "Error desconocido"}")
         }
     }
 }

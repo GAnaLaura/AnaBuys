@@ -12,7 +12,6 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ForecastViewModel @Inject constructor(
-
     private val repository: ForecastRepository
 ): ViewModel() {
     private val _forecast = MutableLiveData<List<Forecast>>()
@@ -22,18 +21,17 @@ class ForecastViewModel @Inject constructor(
 
     fun getForecast(location: String, days: Int = 8, lang: String = "es") {
         viewModelScope.launch {
-            try {
-                val response = repository.getForecast(location, days, lang)
-                if (response.isSuccessful && response.body() != null) {
-                    val json = response.body()!!.string()
+            val result = repository.getForecast(location, days, lang)
+            result.fold(
+                onSuccess = { responseBody ->
+                    val json = responseBody.string()
                     _forecast.value = Forecast.parseForecast(json)
                     _error.value = null
-                } else {
-                    _error.value = "Error en la respuesta del servidor"
+                },
+                onFailure = { exception ->
+                    _error.value = exception.message ?: "Error desconocido"
                 }
-            } catch (e: Exception) {
-                _error.value = e.message
-            }
+            )
         }
     }
 }

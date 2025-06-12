@@ -3,6 +3,7 @@ package com.example.anabuys.view.home
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.anabuys.R
 import com.example.anabuys.databinding.ActivityHomeBinding
@@ -14,6 +15,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class HomeActivity : AppCompatActivity(), FragmentCommunicator {
 
     private lateinit var binding: ActivityHomeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         try {
@@ -30,10 +32,19 @@ class HomeActivity : AppCompatActivity(), FragmentCommunicator {
             }
         } catch (e: Exception) {
             Log.e("HomeActivity", "Error al crear la actividad", e)
+            showError("Ocurrió un error al iniciar la pantalla principal.")
         }
     }
 
     override fun showLoader(value: Boolean) {
         binding.loaderContainerView.visibility = if (value) View.VISIBLE else View.GONE
+    }
+
+    /**
+     * Muestra un mensaje de error al usuario usando un Toast.
+     * Puedes cambiar esto por un Snackbar o una vista personalizada si lo prefieres.
+     */
+    fun showError(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
 }

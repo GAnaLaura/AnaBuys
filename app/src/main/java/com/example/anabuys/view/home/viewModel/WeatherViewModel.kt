@@ -13,32 +13,38 @@ import javax.inject.Inject
 
 @HiltViewModel
 class WeatherViewModel @Inject constructor(
-
     private val repository: WeatherRepository
 ): ViewModel() {
     private val _loaderState = MutableLiveData<Boolean>()
     val loaderState: LiveData<Boolean>
         get() = _loaderState
-    private val _weatherInfo = MutableLiveData<Weather>()
-    val weatherInfo: LiveData<Weather>
+    private val _weatherInfo = MutableLiveData<Weather?>()
+    val weatherInfo: LiveData<Weather?>
         get() = _weatherInfo
-
+    private val _error = MutableLiveData<String?>()
+    val error: LiveData<String?> get() = _error
 
     fun getWeatherDetail(coordinates: String) {
         _loaderState.value = true
         viewModelScope.launch {
-            try {
-                val response = repository.getCurrentWeather(coordinates)
-                if (response?.location?.localTime == null) {
-                    throw Exception("Datos incompletos")
+            val result = repository.getCurrentWeather(coordinates)
+            result.fold(
+                onSuccess = { weather ->
+                    if (weather.location?.localTime == null) {
+                        _error.value = "Datos incompletos"
+                        _weatherInfo.value = null
+                    } else {
+                        _weatherInfo.value = weather
+                        _error.value = null
+                    }
+                },
+                onFailure = { exception ->
+                    Log.e("API", "Error: ${exception.message}")
+                    _error.value = exception.message ?: "Error desconocido"
+                    _weatherInfo.value = null
                 }
-                _weatherInfo.value = response
-            } catch (e: Exception) {
-                Log.e("API", "Error: ${e.message}")
-                _weatherInfo.value = null // ← Para mostrar error en UI
-            } finally {
-                _loaderState.value = false
-            }
+            )
+            _loaderState.value = false
         }
     }
 }

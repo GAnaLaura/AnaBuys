@@ -51,7 +51,7 @@ class WeatherFragment : Fragment() {
                 forecastViewModel.getForecast(coords)
             }
         } else {
-            Toast.makeText(requireContext(), "Permiso de ubicación denegado", Toast.LENGTH_SHORT).show()
+            showError("Permiso de ubicación denegado")
         }
     }
 
@@ -85,17 +85,14 @@ class WeatherFragment : Fragment() {
         navView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigaton_weather -> {
-                    // Scroll al inicio del scrollView
                     binding.scrollView.smoothScrollTo(0, 0)
                     true
                 }
                 R.id.navigation_both -> {
-                    // Scroll hasta antes del RecyclerView (al final del header)
                     binding.scrollView.smoothScrollTo(0, binding.temperatureTextView.top)
                     true
                 }
                 R.id.navigation_forecast -> {
-                    // Scroll hasta antes del temperatureTextView
                     binding.scrollView.smoothScrollTo(0, binding.rvForecast.top)
                     true
                 }
@@ -115,32 +112,52 @@ class WeatherFragment : Fragment() {
 
         if (hasFine || hasCoarse) {
             lifecycleScope.launch {
-                val location = LocationProvider.getInstance(requireContext())
-                    .getCurrentLocation()
-                if (location != null) {
-                    val coords = "${location.latitude},${location.longitude}"
-                    Log.i("LOCATION", "Location: $coords")
-                    onLocationReady(coords)
-                } else {
-                    Log.e("LOCATION", "Error al obtener ubicación")
+                try {
+                    val locationResult = LocationProvider.getInstance(requireContext())
+                        .getCurrentLocation(requireContext())
+                    when (locationResult) {
+                        is com.example.anabuys.core.LocationResult.Success -> {
+                            val coords = "${locationResult.location.latitude},${locationResult.location.longitude}"
+                            Log.i("LOCATION", "Location: $coords")
+                            onLocationReady(coords)
+                        }
+                        is com.example.anabuys.core.LocationResult.PermissionDenied -> {
+                            showError("Permiso de ubicación denegado")
+                        }
+                        is com.example.anabuys.core.LocationResult.LocationUnavailable -> {
+                            showError("Ubicación no disponible")
+                        }
+                        is com.example.anabuys.core.LocationResult.Error -> {
+                            showError(locationResult.message)
+                        }
+                    }
+                } catch (e: Exception) {
+                    Log.e("LOCATION", "Error al obtener ubicación", e)
+                    showError("Error al obtener ubicación: ${e.localizedMessage ?: "desconocido"}")
                 }
             }
+        } else {
+            showError("Permiso de ubicación denegado")
         }
     }
 
     private fun setupObservers() {
         weatherViewModel.weatherInfo.observe(viewLifecycleOwner) { weather ->
-            showWeatherInfo(weather)
+            if (weather != null) {
+                showWeatherInfo(weather)
+            }
         }
         weatherViewModel.loaderState.observe(viewLifecycleOwner) { state ->
             communicator.showLoader(state)
         }
-
+        weatherViewModel.error.observe(viewLifecycleOwner) { msg ->
+            msg?.let { showError(it) }
+        }
         forecastViewModel.forecast.observe(viewLifecycleOwner) { list ->
             forecastAdapter.submitList(list)
         }
         forecastViewModel.error.observe(viewLifecycleOwner) { msg ->
-            msg?.let { Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show() }
+            msg?.let { showError(it) }
         }
     }
 
@@ -158,9 +175,12 @@ class WeatherFragment : Fragment() {
             .into(binding.weatherIconImageView)
     }
 
+    private fun showError(message: String) {
+        Toast.makeText(requireContext(), message, Toast.LENGTH_LONG).show()
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
 }

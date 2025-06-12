@@ -13,8 +13,5 @@ interface WeatherAPI {
         @Query("q") location: String
     ): Response<Weather>
 
-    suspend fun getWeatherInfo(
-        @Query("key") apiKey: String,
-        @Query("q") location: String
-    ): Response<List<Weather>>
+  
 }

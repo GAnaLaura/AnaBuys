@@ -17,6 +17,9 @@ class SignUpViewModel : ViewModel() {
     private val _signUpSuccess = MutableLiveData<Boolean>()
     val signUpSuccess: LiveData<Boolean> get() = _signUpSuccess
 
+    private val _error = MutableLiveData<String?>()
+    val error: LiveData<String?> get() = _error
+
     private val firebase = FirebaseAuth.getInstance()
 
     fun requestSignUp(email: String, password: String) {
@@ -28,14 +31,17 @@ class SignUpViewModel : ViewModel() {
                 result.user?.let {
                     Log.i("Firebase", "Se pudo crear el usuario")
                     _signUpSuccess.value = true
+                    _error.value = null
                 } ?: run {
                     Log.e("Firebase", "El usuario es null")
                     _signUpSuccess.value = false
+                    _error.value = "No se pudo crear el usuario"
                 }
             } catch (e: Exception) {
                 Log.e("Firebase", "Error al crear el usuario", e)
                 _loaderState.value = false
                 _signUpSuccess.value = false
+                _error.value = e.message ?: "Error desconocido"
             }
         }
     }

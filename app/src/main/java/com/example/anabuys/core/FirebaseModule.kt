@@ -13,7 +13,7 @@ object FirebaseModule {
     @Singleton
     @Provides
     fun provideFirebaseAuth(): FirebaseAuth {
-
+        // El manejo de errores de autenticación debe hacerse en los repositorios o ViewModels
         return FirebaseAuth.getInstance()
     }
 }
