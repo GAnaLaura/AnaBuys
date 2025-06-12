@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "932601537663",
+    "project_id": "anabuys-a67b8",
+    "storage_bucket": "anabuys-a67b8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932601537663:android:7b46748b42dec0e4700b4a",
+        "android_client_info": {
+          "package_name": "com.example.anabuys"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVg-JQJ0OOj-X3ga9XL1UWgVA8WxeDz3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

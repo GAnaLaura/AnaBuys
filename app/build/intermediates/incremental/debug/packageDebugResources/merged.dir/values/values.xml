@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="ForecastTittle">Forecast</string>
+    <string name="app_name">AnaBuys</string>
+    <string name="back_button_description">Botón de retroceso</string>
+    <string name="birth_date">Birth date: </string>
+    <string name="button_reset">Reset password</string>
+    <string name="celsius">22 °C</string>
+    <string name="city">Karachi</string>
+    <string name="code">Code: </string>
+    <string name="continue_button">Continue</string>
+    <string name="create_account">Do not have an account? Register</string>
+    <string name="date">Monday 7:00 AM</string>
+    <string name="date_time_default">TUESDAY 12:00 AM</string>
+    <string name="description_reset">Enter the email address associated with your account</string>
+    <string name="email">Email:</string>
+    <string name="enter_password">Password:</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="forecast_list_description">Lista de pronóstico de siete días</string>
+    <string name="gcm_defaultSenderId" translatable="false">932601537663</string>
+    <string name="goodMorning">Good morning</string>
+    <string name="google_api_key" translatable="false">AIzaSyCVg-JQJ0OOj-X3ga9XL1UWgVA8WxeDz3E</string>
+    <string name="google_app_id" translatable="false">1:932601537663:android:7b46748b42dec0e4700b4a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCVg-JQJ0OOj-X3ga9XL1UWgVA8WxeDz3E</string>
+    <string name="google_storage_bucket" translatable="false">anabuys-a67b8.firebasestorage.app</string>
+    <string name="greeting">Good morning\nWasim</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="horizontalLine">horizontalLine</string>
+    <string name="hour">7:00</string>
+    <string name="last_names">Last names: </string>
+    <string name="location_default">CDMX</string>
+    <string name="login_user">Login</string>
+    <string name="menu_button_description">Button to open setting</string>
+    <string name="name">Name: </string>
+    <string name="next">Next</string>
+    <string name="open_menu">Open menu</string>
+    <string name="password_reset">Reset your password</string>
+    <string name="permission">Permission</string>
+    <string name="previous">Previous</string>
+    <string name="project_id" translatable="false">anabuys-a67b8</string>
+    <string name="referral_code">I have a referral code.</string>
+    <string name="register_user">Register</string>
+    <string name="reset_password">Forgot your password? Reset</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="sunset">Sunset</string>
+    <string name="sunsetIcon">sunset icon</string>
+    <string name="sunset_time_default">12:00</string>
+    <string name="temp">23°</string>
+    <string name="temperature">Temperature</string>
+    <string name="temperatureIcon">temperature icon</string>
+    <string name="temperature_default">17°C</string>
+    <string name="temperature_second_default">21°C</string>
+    <string name="user_name">Username: </string>
+    <string name="verticalLine">verticalLine</string>
+    <string name="verticalLine2">verticalLine2</string>
+    <string name="weatherIcon">weatherIcon</string>
+    <string name="weather_icon_desc">Icon Forecast\n</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="wind">Wind</string>
+    <string name="windIcon">wind icon</string>
+    <string name="windInfo">4m/s</string>
+    <string name="wind_speed_default">3 m/s</string>
+    <string name="wind_speed_info">Wind speed info</string>
+    <style name="Base.Theme.AnaBuys" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.AnaBuys" parent="Base.Theme.AnaBuys"/>
+</resources>
